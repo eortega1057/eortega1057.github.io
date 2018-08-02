@@ -39,6 +39,21 @@
     <title> </title>
   </head>
   <body>
+    <select id ="sign">
+      <option value="Oily skin" selected= "selected">oily skin</option>
+      <option value="Normal skin">Oily skin</option>
+      <option value="Dry skin">Dry skin</option>
+    </select>
+    <button onclick="Getremedies()">Get remedies</button>
+    <p id= "type"></p>
+  </body>
+<script>
+  function Getremedies() {
+    var e = document.getElementById("sign");
+    var sign = e.options[e.selectedIndex].value;
+    var typeRequest = new
+  }
+
   <h1 class = "one">Self-care 101</h1>
 
   <h2 class = "one">Today I'm going to show you some self care tips! No one really listens to these tips but they can go a long way..</h2
