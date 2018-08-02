@@ -40,9 +40,9 @@
   </head>
   <body>
     <select id ="sign">
-      <option value="Oily skin" selected= "selected">oily skin</option>
-      <option value="Normal skin">Oily skin</option>
-      <option value="Dry skin">Dry skin</option>
+      <option value="Oily_skin" selected= "selected">Oily Skin</option>
+      <option value="Normal_skin">Normal Skin</option>
+      <option value="Dry_skin">Dry Skin</option>
     </select>
     <button onclick="Getremedies()">Get remedies</button>
     <p id= "type"></p>
@@ -51,20 +51,23 @@
   function Getremedies() {
     var e = document.getElementById("sign");
     var sign = e.options[e.selectedIndex].value;
-    var typeRequest = new
+    if(sign== "Dry_skin"){
+      console.log("YAY");
+      
+    }
   }
-
+  </script>
   <h1 class = "one">Self-care 101</h1>
 
-  <h2 class = "one">Today I'm going to show you some self care tips! No one really listens to these tips but they can go a long way..''</h2
+  <h2 class = "one">Today I'm going to show you some self care tips! No one really listens to these tips but they can go a long way..</h2>
 
     <p id = "quote" ></p>
     <image src = images.jpg>
   </body>
-  <script>
+<script>
     var element = document.getElementById('quote'):
     var quotes = ['quote1','quote2','quote3']:
     var randomNumber = Math.floor(Math.random() *3);
     element.innerText = quotes[randomNumber];
-  </script>
+</script>
 </html>
